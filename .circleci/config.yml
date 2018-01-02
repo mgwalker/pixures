@@ -16,7 +16,7 @@ jobs:
             - node_modules
       - run:
           name: build
-          command: npm build
+          command: npm run build
       - run:
           name: install AWS CLI
           command: sudo apt-get -y -qq install awscli

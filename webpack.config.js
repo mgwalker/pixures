@@ -22,7 +22,7 @@ module.exports = {
           {
             loader: 'sass-loader',
             options: {
-              includePaths: ['/Users/mgwalker/Documents/Source/images/node_modules/bourbon-neat/core']
+              includePaths: ['./node_modules/bourbon-neat/core']
             }
           }
         ]
