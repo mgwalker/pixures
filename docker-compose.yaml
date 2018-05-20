@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  gifs:
+    build: ./
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    ports:
+      - 65010:8000

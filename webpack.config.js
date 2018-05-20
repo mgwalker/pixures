@@ -10,9 +10,7 @@ module.exports = {
     path: path.resolve(__dirname, './dist'),
     filename: 'app.js'
   },
-  plugins: [
-    new EnvironmentPlugin(['IMAGE_METADATA_URL'])
-  ],
+  plugins: [new EnvironmentPlugin(['IMAGE_METADATA_URL'])],
   module: {
     rules: [
       {
@@ -20,14 +18,8 @@ module.exports = {
         use: [
           'style-loader',
           'css-loader',
-          // This loader handles resolving SASS relative URLs from other
-          // paths, particularly USWDS in the node_modules directory.
-          // 'resolve-url-loader',
           {
-            loader: 'sass-loader',
-            options: {
-              includePaths: ['./node_modules/bourbon-neat/core']
-            }
+            loader: 'sass-loader'
           }
         ]
       },
