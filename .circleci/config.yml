@@ -9,7 +9,7 @@ jobs:
           key: gifs-npm-cache-{{ checksum "package-lock.json" }}
       - run:
           name: update npm
-          command: npm install -g npm@6
+          command: sudo npm install -g npm@6
       - run:
           name: install dependencies
           command: npm ci
